@@ -1,0 +1,10 @@
+#app {
+}
+
+.box {
+  /*estilizacao das DIVs BOX*/
+  width: 60px; /*largura*/
+  height: 60px; /*comprimento*/
+  background: #f00; /*cor de fundo*/
+  margin: 5px; /*margem*/
+}
