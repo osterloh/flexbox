@@ -1,6 +1,19 @@
+html,
+body,
 #app {
-  display: flex;
-  flex-direction: column;
+  /*Estilizacao para o ocupar o comprimento total da tela*/
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  /*Estilizacao da DIV APP, div principal*/
+  display: flex; /*habilita o flexbox na div principal*/
+  flex-direction: column; /*tipo de direcao de alinhamento*/
+
+  align-items: center; /*alimento vertical dos elementos caso ROW*/
+  justify-content: space-around; /*alinhemento horizontal dos elementos caso ROW*/
+  /*Caso o flex-direction seja COLUMN os alimentos de align-itens e justify-content sao invertidos*/
 }
 
 .box {
