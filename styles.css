@@ -9,6 +9,25 @@ body,
 #app {
   /*Estilizacao da DIV APP, div principal*/
   display: flex; /*habilita o flexbox na div principal*/
+}
+
+.box {
+  /*estilizacao das DIVs BOX*/
+  width: 300px; /*largura*/
+  height: 60px; /*comprimento*/
+  background: #f00; /*cor de fundo*/
+  margin: 5px; /*margem*/
+
+  /*flex-grow: 1;*/ /*aumenta os elementos para ocupar toda a largura da tela*/
+  /*flex-shrink: 0;*/ /*diminui o tamanho dos elementos (1), mantem o tamanho dos elementos (0)*/
+  flex: 1; /*aplica as definicaoes de flex-grow e flex-shrink - flex: 1 0*/
+}
+
+/*---ESTILOS NAO APLICADOS, POREM ESTUDADOS---*/
+
+#app-old1 {
+  /*Estilizacao da DIV APP, div principal*/
+  display: flex; /*habilita o flexbox na div principal*/
   flex-direction: column; /*tipo de direcao de alinhamento*/
 
   align-items: center; /*alimento vertical dos elementos caso ROW*/
@@ -16,7 +35,7 @@ body,
   /*Caso o flex-direction seja COLUMN os alimentos de align-itens e justify-content sao invertidos*/
 }
 
-.box {
+.box-old1 {
   /*estilizacao das DIVs BOX*/
   width: 60px; /*largura*/
   height: 60px; /*comprimento*/
