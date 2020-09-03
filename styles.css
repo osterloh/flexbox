@@ -9,8 +9,6 @@ body,
 #app {
   /*Estilizacao da DIV APP, div principal*/
   display: flex; /*habilita o flexbox na div principal*/
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .box {
@@ -19,6 +17,20 @@ body,
   height: 60px; /*comprimento*/
   background: #f00; /*cor de fundo*/
   margin: 5px; /*margem*/
+}
+
+.red {
+  order: 1;
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
 }
 
 /*---ESTILOS NAO APLICADOS, POREM ESTUDADOS---*/
@@ -56,4 +68,19 @@ body,
   /*flex-grow: 1;*/ /*aumenta os elementos para ocupar toda a largura da tela*/
   /*flex-shrink: 0;*/ /*diminui o tamanho dos elementos (1), mantem o tamanho dos elementos (0)*/
   flex: 1; /*aplica as definicaoes de flex-grow e flex-shrink - flex: 1 0*/
+}
+
+#app-old3 {
+  /*Estilizacao da DIV APP, div principal*/
+  display: flex; /*habilita o flexbox na div principal*/
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.box-old3 {
+  /*estilizacao das DIVs BOX*/
+  width: 200px; /*largura*/
+  height: 60px; /*comprimento*/
+  background: #f00; /*cor de fundo*/
+  margin: 5px; /*margem*/
 }
