@@ -1,86 +1,12 @@
-html,
-body,
-#app {
-  /*Estilizacao para o ocupar o comprimento total da tela*/
-  height: 100%;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Padding nao aumenta o tamanho da width ou height de um elemento*/
 }
 
-#app {
-  /*Estilizacao da DIV APP, div principal*/
-  display: flex; /*habilita o flexbox na div principal*/
-}
-
-.box {
-  /*estilizacao das DIVs BOX*/
-  width: 200px; /*largura*/
-  height: 60px; /*comprimento*/
-  background: #f00; /*cor de fundo*/
-  margin: 5px; /*margem*/
-}
-
-.red {
-  order: 1;
-}
-
-.green {
-  background: #0f0;
-  order: 2;
-}
-
-.blue {
-  background: #00f;
-  order: 0;
-}
-
-/*---ESTILOS NAO APLICADOS, POREM ESTUDADOS---*/
-
-#app-old1 {
-  /*Estilizacao da DIV APP, div principal*/
-  display: flex; /*habilita o flexbox na div principal*/
-  flex-direction: column; /*tipo de direcao de alinhamento*/
-
-  align-items: center; /*alimento vertical dos elementos caso ROW*/
-  justify-content: space-around; /*alinhemento horizontal dos elementos caso ROW*/
-  /*Caso o flex-direction seja COLUMN os alimentos de align-itens e justify-content sao invertidos*/
-}
-
-.box-old1 {
-  /*estilizacao das DIVs BOX*/
-  width: 60px; /*largura*/
-  height: 60px; /*comprimento*/
-  background: #f00; /*cor de fundo*/
-  margin: 5px; /*margem*/
-}
-
-#app-old2 {
-  /*Estilizacao da DIV APP, div principal*/
-  display: flex; /*habilita o flexbox na div principal*/
-}
-
-.box-old2 {
-  /*estilizacao das DIVs BOX*/
-  width: 300px; /*largura*/
-  height: 60px; /*comprimento*/
-  background: #f00; /*cor de fundo*/
-  margin: 5px; /*margem*/
-
-  /*flex-grow: 1;*/ /*aumenta os elementos para ocupar toda a largura da tela*/
-  /*flex-shrink: 0;*/ /*diminui o tamanho dos elementos (1), mantem o tamanho dos elementos (0)*/
-  flex: 1; /*aplica as definicaoes de flex-grow e flex-shrink - flex: 1 0*/
-}
-
-#app-old3 {
-  /*Estilizacao da DIV APP, div principal*/
-  display: flex; /*habilita o flexbox na div principal*/
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.box-old3 {
-  /*estilizacao das DIVs BOX*/
-  width: 200px; /*largura*/
-  height: 60px; /*comprimento*/
-  background: #f00; /*cor de fundo*/
-  margin: 5px; /*margem*/
+body {
+  background: #e6ecf0;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-rendering: optimizeLegibility !important; /*Renderiza a font com melhor qualidade*/
+  -webkit-font-amoothing: antialiased !important;
 }
